@@ -9,6 +9,8 @@ public class VidPlayer : MonoBehaviour
     public string IntroPlayer;
     public float Dt;
 
+    public AudioSource BGkiPG;
+
     public GameObject UImode;
 
     private void Start()
@@ -19,8 +21,10 @@ public class VidPlayer : MonoBehaviour
 
     void VidEnder()
     {
+        BGkiPG.Play();
         UImode.SetActive(true);
         Destroy(gameObject);
+        
     }
 
     public void PlayerVid()

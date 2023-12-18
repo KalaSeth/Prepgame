@@ -139,7 +139,7 @@ public class Level1 : MonoBehaviour
         {
             LevelLost.SetActive(true);
             LevelUI.SetActive(false);
-            Invoke("Pass", 1);
+            Invoke("Lost", 1);
         }
     }
 }
